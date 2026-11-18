@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudyAI – Asisten Coding RPL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side" id="side">
+  <div class="brand"><span class="spark">✺</span> StudyAI</div>
+  <button class="new" id="new"><span class="plus">+</span> Chat baru</button>
+  <div class="lbl">Terbaru</div>
+  <div id="list"></div>
+</aside>
+<div class="shade" id="shade"></div>
+<main class="home">
+  <div class="top"><button class="ic" id="menu">☰</button></div>
+  <div id="scroll">
+    <div id="empty"><h1><span class="spark">✺</span><span id="hi"></span></h1></div>
+    <div class="col" id="msgs"></div>
+  </div>
+  <div class="comp">
+    <div class="box">
+      <textarea id="in" rows="1" placeholder="Tanya coding atau tempel kode/error di sini"></textarea>
+      <div class="bt">
+        <select id="mode" title="Gaya jawaban">
+          <option value="help">Tanya jawab</option>
+          <option value="explain">Jelaskan kode</option>
+          <option value="debug">Cari error</option>
+          <option value="review">Review kode</option>
+          <option value="practice">Latihan soal</option>
+        </select>
+        <button id="send" title="Kirim">↑</button>
+      </div>
+    </div>
+    <small>StudyAI bisa salah. Selalu coba dan cek kodenya sebelum dipakai.</small>
+  </div>
+  <div class="sg">
+    <button>Jelasin async await di JavaScript</button>
+    <button>Bedanya let, const, dan var?</button>
+    <button>Cara bikin CRUD pakai Laravel</button>
+    <button>Apa itu REST API?</button>
+    <button>Jelasin Big O dengan contoh</button>
+    <button>SQL JOIN itu gimana?</button>
+  </div>
+</main>
+<div id="toast"></div>
+<script src="main.js"></script>
+</body>
+</html>
